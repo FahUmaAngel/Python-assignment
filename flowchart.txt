@@ -1,0 +1,129 @@
+  Flowchart of program Monitoring (Python)
+  
+         ┌────────────────────┐
+         │   Start Program    │
+         └───────┬────────────┘
+                 │
+                 ▼
+       ┌────────────────────┐
+       │ Load alarms (json) │
+       │   if exist file    │
+       └───────┬────────────┘
+               │
+               ▼
+       ┌────────────────────┐
+       │ Show Main Menu     │
+       │ 1. Start monitoring│
+       │ 2. List monitoring │
+       │ 3. Create alarm    │
+       │ 4. Show alarms     │
+       │ 5. Start watch mode│
+       │ 6. Remove alarm    │
+       │ 7. Exit program    │
+       └────────┬───────────┘
+                │
+                ▼
+        ┌─────────────────┐
+        │ User selection? │
+        └───────┬─────────┘
+                │
+   ┌────────────┼───────────────────────┐
+   ▼            ▼           ▼           ▼
+(Start        (List       (Create     (Show
+monitoring)   status)     alarm)      alarms)
+   │            │           │           │
+   ▼            ▼           ▼           ▼
+ ┌────────┐   ┌─────────┐  ┌────────┐ ┌─────────┐
+ │Enable  │   │ Show    │  │ Select │ │ Sort &  │
+ │monitor │   │ CPU/Mem/│  │ CPU/Mem│ │ Display │
+ │status=1│   │ Disk    │  │ Disk   │ │ alarms  │
+ └────┬───┘   └────┬────┘  └───┬────┘ └────┬────┘
+      │            │          │           │
+      ▼            ▼          ▼           ▼
+   (Back to Main Menu again always)    
+
+
+
+
+
+
+Create Alarm (Skapa larm)
+
+ ┌───────────────────────┐
+ │   User choose type    │
+ │   (CPU / Mem / Disk)  │
+ └───────────┬───────────┘
+             ▼
+     ┌──────────────┐
+     │ Ask user %   │
+     │ (1–100 only) │
+     └─────┬────────┘
+           ▼
+ ┌────────────────────────┐
+ │ Valid? Yes → Save alarm│
+ │ Invalid → Show error   │
+ └─────────┬──────────────┘
+           ▼
+ (Back to Main Menu)
+
+
+
+Start Watch Mode (Övervakningsläge)
+
+ ┌─────────────────────────────┐
+ │ Print "Monitoring started"  │
+ └──────────────┬──────────────┘
+                ▼
+       ┌─────────────────┐
+       │ Loop every N sec│
+       └────────┬────────┘
+                ▼
+    ┌───────────────────────────────┐
+    │ Check CPU / Mem / Disk usage  │
+    └──────────────┬────────────────┘
+                   ▼
+     ┌────────────────────────────┐
+     │ Compare with alarms config │
+     └──────────────┬─────────────┘
+                    ▼
+        ┌────────────────────────┐
+        │ If usage >= alarm →    │
+        │ Print WARNING + log it │
+        └──────────────┬─────────┘
+                       ▼
+            (Press key → Back to main menu)
+
+
+
+
+Remove Alarm (Ta bort alarm)
+
+ ┌─────────────────────────┐
+ │ Show list of alarms     │
+ │ With index numbers      │
+ └───────────┬────────────┘
+             ▼
+     ┌───────────────┐
+     │ Ask user input│
+     │ (choose index)│
+     └─────┬─────────┘
+           ▼
+ ┌─────────────────────────┐
+ │ Valid index?            │
+ │ Yes → Remove alarm      │
+ │ No → Show error message │
+ └──────────┬──────────────┘
+            ▼
+   (Back to Main Menu)
+
+
+Exit Program
+
+ ┌───────────────────────────┐
+ │ Save alarms → alarms.json │
+ │ Close log file            │
+ └───────────┬───────────────┘
+             ▼
+        ┌─────────┐
+        │   End   │
+        └─────────┘
