@@ -84,7 +84,38 @@ def _list_active_monitoring(self):
 
 # call from choice 3
 def _create_alarm_menu(self):
+    while True:
+        print("\n Create Alarm")
+        print("1. CPU Usage Alarm")
+        print("2. Memory Usage Alarm")
+        print("3. Disk Usage Alarm")
+        print("4. Back to Main Menu")
+        sub_choice = input("Choose an option (1-4): ").strip()
+
+        if sub_choice == '1':
+            self._create_cpu_alarm()
+        elif sub_choice == '2':
+            self._create_memory_alarm()
+        elif sub_choice == '3':
+            self._create_disk_alarm()
+        elif sub_choice == '4':
+            break
+        print("Invalid choice. Please try again.")
+
+
+
+    # call from choice 3.1 create CPU alarm
+def _create_cpu_alarm(self):
+ 
+ 
+    # call from choice 3.2 create Memory alarm
+def _create_memory_alarm(self):
     
+    # call from choice 3.3 create Disk alarm
+def _create_disk_alarm(self):
+
+
+
 
 # call from choice 4
 def _show_alarms(self):
