@@ -11,16 +11,16 @@
        └───────┬────────────┘
                │
                ▼
-       ┌────────────────────┐
-       │ Show Main Menu     │
-       │ 1. Start monitoring│
-       │ 2. List monitoring │
-       │ 3. Create alarm    │
-       │ 4. Show alarms     │
-       │ 5. Start watch mode│
-       │ 6. Remove alarm    │
-       │ 7. Exit program    │
-       └────────┬───────────┘
+       ┌────────────────────────────┐
+       │ Show Main Menu             │
+       │ 1. Start monitoring        │
+       │ 2. List monitoring         │
+       │ 3. Create alarm            │
+       │ 4. Show alarms             │
+       │ 5. Start Monitoring mode   │
+       │ 6. Remove alarm            │
+       │ 7. Exit program            │
+       └────────┬───────────────────┘
                 │
                 ▼
         ┌─────────────────┐
@@ -68,7 +68,7 @@ Create Alarm (Skapa larm)
 
 
 
-Start Watch Mode (Övervakningsläge)
+Start Monitoring Mode (Övervakningsläge)
 
  ┌─────────────────────────────┐
  │ Print "Monitoring started"  │

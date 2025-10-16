@@ -1,0 +1,12 @@
+2025-10-16 20:46:56_Alarms_saved_to_file
+2025-10-16 20:46:56_CPU_Usage_Alarm_Configured_at_30_Percent
+2025-10-16 20:47:26_Alarms_saved_to_file
+2025-10-16 20:47:26_Memory_Usage_Alarm_Configured_at_50_Percent
+2025-10-16 20:47:49_Alarms_saved_to_file
+2025-10-16 20:47:49_Memory_Usage_Alarm_Configured_at_50_Percent
+2025-10-16 20:48:28_Alarms_saved_to_file
+2025-10-16 20:48:28_Alarm_Remove_Memory_50_Percent
+2025-10-16 20:48:42_Monitoring_mode_started
+2025-10-16 20:48:43_Alarm_Triggered_MEMORY_50_Percent
+2025-10-16 20:49:23_Alarms_saved_to_file
+2025-10-16 20:49:23_Program_Exited

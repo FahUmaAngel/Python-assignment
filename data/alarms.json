@@ -1,0 +1,14 @@
+[
+  {
+    "id": "d704bb35-c13c-4a29-9a5e-32bb2c0c82d8",
+    "metric": "cpu",
+    "threshold": 30,
+    "created_at": 1760640416.3466675
+  },
+  {
+    "id": "b8b1c0b9-75eb-46be-ad18-75c46c8bb638",
+    "metric": "memory",
+    "threshold": 50,
+    "created_at": 1760640446.6049893
+  }
+]
